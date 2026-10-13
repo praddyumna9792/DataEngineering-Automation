@@ -1,0 +1,12 @@
+source_column,target_column,source_type,target_type,transformation_rule,is_primary_key,is_nullable,default_value
+customer_id,CUSTOMER_ID,INT64,NUMBER(38,0),DIRECT,true,false,
+signup_date,SIGNUP_DATE,DATE,DATE,DIRECT,false,false,
+email,EMAIL,STRING,VARCHAR(255),LOWER,false,false,
+first_name,FIRST_NAME,STRING,VARCHAR(100),TRIM,false,true,
+last_name,LAST_NAME,STRING,VARCHAR(100),TRIM,false,true,
+country_code,COUNTRY_CODE,STRING,VARCHAR(10),UPPER,false,true,'US'
+account_balance,ACCOUNT_BALANCE,NUMERIC,NUMBER(38,9),DIRECT,false,false,0.0
+loyalty_tier,LOYALTY_TIER,STRING,VARCHAR(50),UPPER,false,true,'STANDARD'
+is_active,IS_ACTIVE,BOOL,BOOLEAN,DIRECT,false,false,true
+last_login_at,LAST_LOGIN_AT,TIMESTAMP,TIMESTAMP_NTZ,DIRECT,false,true,
+preferences,PREFERENCES,JSON,VARIANT,DIRECT,false,true,

@@ -1,0 +1,11 @@
+column_name,data_type,is_nullable,is_primary_key,description
+order_id,INT64,false,true,Unique order identifier
+order_date,DATE,false,false,Order creation date
+customer_id,INT64,false,false,Associated customer ID
+order_status,STRING,false,false,Fulfillment status
+total_amount,NUMERIC,false,false,Total transaction price
+tax_amount,NUMERIC,true,false,Applicable sales tax
+discount_applied,NUMERIC,true,false,Promotional discount amount
+payment_method,STRING,true,false,Card or digital wallet payment method
+created_at,TIMESTAMP,false,false,Creation timestamp
+updated_at,TIMESTAMP,false,false,Last update timestamp

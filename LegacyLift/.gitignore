@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Environment Variables & Keys
+.env
+*.json
+!sample_data/*.json
+*.key
+*.pem
+
+# SQLite database & local state
+artifacts/legacylift.db
+artifacts/runs/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Streamlit
+.streamlit/secrets.toml
