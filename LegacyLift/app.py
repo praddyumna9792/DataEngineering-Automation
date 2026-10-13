@@ -24,7 +24,7 @@ from ui.view_settings import render_settings
 # Page Config
 st.set_page_config(
     page_title="LegacyLift — Historical Migration Platform",
-    page_icon="🚀",
+    page_icon="🕸️",
     layout="wide",
     initial_sidebar_state="expanded",
 )
